@@ -18,8 +18,13 @@ EntityFramework
 
 -------------------------------------------------
 Learn to use:
+	Swagger UI for API testing
 	Serilog for logging
 	Seq for dashboard
+	AutoMapper: library to convert datatypes
+
+Learn concepts:
+	Data transfer objects (DTO): Used to hide certain information from users, only let them see what we want them to see, also filter out irrelevant input fields from the users
 	
 
 --------------------------------------------------
