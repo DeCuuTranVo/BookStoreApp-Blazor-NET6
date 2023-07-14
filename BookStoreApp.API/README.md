@@ -1,3 +1,22 @@
+# BookStore App 
+
+## Purposes
+Learning API and Blazor (Server and Client)
+
+## Course Information
+Complete Blazor (WASM & Server) and ASP.NET API Development [Link]('https://www.udemy.com/course/end-to-end-aspnet-core-31-api-and-blazor-development/')
+<br>
+Instructor: Trevoir Williams
+
+
+## Technologies:
+Blazor
+ASP.NET
+EntityFramework
+
+
+
+-------------------------------------------------
 Learn to use:
 	Serilog for logging
 	Seq for dashboard
