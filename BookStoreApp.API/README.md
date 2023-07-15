@@ -34,6 +34,18 @@ Terminal Commands
 
 	2. Add table in Code-First fashion
 		add-migration AddedCodeFirstTable
+		add-migration AddedIdentityTables
 
 	3. Undo the latest migration
 		Remove-Migration
+
+	4. To save migration file
+		Update-Database
+
+
+--------------------------------------------------
+Shortcut
+	Build Solution					: Ctrl + Shift + B
+	Cancel							: Ctrl + Break
+	Compile							: Ctrl + F7
+	Run code analysis on solution	: Alt + F11
