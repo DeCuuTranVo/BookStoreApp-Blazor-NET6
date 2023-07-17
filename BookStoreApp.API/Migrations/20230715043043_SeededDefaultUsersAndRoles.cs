@@ -35,8 +35,8 @@ namespace BookStoreApp.API.Migrations
                 columns: new[] { "RoleId", "UserId" },
                 values: new object[,]
                 {
-                    { "138e1648-6573-433a-a28f-1cf287baa2cd", "29390fa2-3c81-431f-9758-a3f56379826b" },
-                    { "2d1b2801-af80-4424-a6ad-d67f84892b1f", "52468a51-5f9b-4b66-93f1-7f374dfad875" }
+                    { "138e1648-6573-433a-a28f-1cf287baa2cd","52468a51-5f9b-4b66-93f1-7f374dfad875" },
+                    { "2d1b2801-af80-4424-a6ad-d67f84892b1f","29390fa2-3c81-431f-9758-a3f56379826b"  }
                 });
         }
 
@@ -46,12 +46,12 @@ namespace BookStoreApp.API.Migrations
             migrationBuilder.DeleteData(
                 table: "AspNetUserRoles",
                 keyColumns: new[] { "RoleId", "UserId" },
-                keyValues: new object[] { "138e1648-6573-433a-a28f-1cf287baa2cd", "29390fa2-3c81-431f-9758-a3f56379826b" });
+                keyValues: new object[] { "138e1648-6573-433a-a28f-1cf287baa2cd", "52468a51-5f9b-4b66-93f1-7f374dfad875" });
 
             migrationBuilder.DeleteData(
                 table: "AspNetUserRoles",
                 keyColumns: new[] { "RoleId", "UserId" },
-                keyValues: new object[] { "2d1b2801-af80-4424-a6ad-d67f84892b1f", "52468a51-5f9b-4b66-93f1-7f374dfad875" });
+                keyValues: new object[] { "2d1b2801-af80-4424-a6ad-d67f84892b1f", "29390fa2-3c81-431f-9758-a3f56379826b" });
 
             migrationBuilder.DeleteData(
                 table: "AspNetRoles",

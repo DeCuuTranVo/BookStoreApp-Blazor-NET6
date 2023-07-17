@@ -58,24 +58,24 @@ public partial class BookStoreDbContext : IdentityDbContext<ApiUser>
         });
 
         modelBuilder.Entity<IdentityRole>().HasData(
-            new IdentityRole
-            {
-                Name = "User",
-                NormalizedName = "USER",
-                Id = "138e1648-6573-433a-a28f-1cf287baa2cd"
-            },
-            new IdentityRole
+            new IdentityRole //Admin
             {
                 Name = "Administrator",
                 NormalizedName = "ADMINISTRATOR",
                 Id = "2d1b2801-af80-4424-a6ad-d67f84892b1f"
+            },
+            new IdentityRole //User
+            {
+                Name = "User",
+                NormalizedName = "USER",
+                Id = "138e1648-6573-433a-a28f-1cf287baa2cd"
             }
         );
 
         var hasher = new PasswordHasher<ApiUser>();
 
         modelBuilder.Entity<ApiUser>().HasData(
-            new ApiUser
+            new ApiUser //Admin 
             {
                 Id = "29390fa2-3c81-431f-9758-a3f56379826b",
                 Email = "admin@bookstore.com",
@@ -86,7 +86,7 @@ public partial class BookStoreDbContext : IdentityDbContext<ApiUser>
                 LastName = "Admin",
                 PasswordHash = hasher.HashPassword(null, "P@ssword1")
             },
-            new ApiUser
+            new ApiUser //User
             {
                 Id = "52468a51-5f9b-4b66-93f1-7f374dfad875",
                 Email = "user@bookstore.com",
@@ -102,12 +102,12 @@ public partial class BookStoreDbContext : IdentityDbContext<ApiUser>
         modelBuilder.Entity<IdentityUserRole<string>>().HasData(
             new IdentityUserRole<string>
             {
-                RoleId = "138e1648-6573-433a-a28f-1cf287baa2cd",
+                RoleId = "2d1b2801-af80-4424-a6ad-d67f84892b1f",
                 UserId = "29390fa2-3c81-431f-9758-a3f56379826b"
             },
             new IdentityUserRole<string>
             {
-                RoleId = "2d1b2801-af80-4424-a6ad-d67f84892b1f",
+                RoleId = "138e1648-6573-433a-a28f-1cf287baa2cd",
                 UserId = "52468a51-5f9b-4b66-93f1-7f374dfad875"
             }
         );

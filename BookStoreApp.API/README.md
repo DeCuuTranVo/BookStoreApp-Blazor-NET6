@@ -26,6 +26,7 @@ Learn to use:
 Learn concepts:
 	Data transfer objects (DTO): Used to hide certain information from users, only let them see what we want them to see, also filter out irrelevant input fields from the users
 	
+	Manage User Secret: Store JWT settings
 
 --------------------------------------------------
 Terminal Commands
