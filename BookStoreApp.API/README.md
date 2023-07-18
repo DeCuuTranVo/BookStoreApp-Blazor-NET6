@@ -17,11 +17,13 @@ EntityFramework
 
 
 -------------------------------------------------
-Learn to use:
+Learn to use tools:
 	Swagger UI for API testing
 	Serilog for logging
 	Seq for dashboard
 	AutoMapper: library to convert datatypes
+
+	NSwagStudio: https://github.com/RicoSuter/NSwag/wiki/NSwagStudio: Generate Https Client Code, Keeping up with API changes
 
 Learn concepts:
 	Data transfer objects (DTO): Used to hide certain information from users, only let them see what we want them to see, also filter out irrelevant input fields from the users
@@ -50,3 +52,17 @@ Shortcut
 	Cancel							: Ctrl + Break
 	Compile							: Ctrl + F7
 	Run code analysis on solution	: Alt + F11
+
+--------------------------------------------------
+Resource:
+	Learn Blazor:
+		https://blazor-university.com/
+
+	Learn C#:
+		https://www.youtube.com/watch?v=0QUgvfuKvWU
+		https://oklahomadov.udemy.com/course/csharp-tutorial-for-beginners/
+
+
+
+
+		C:\Users\DELL\source\repos\BookStoreApp\BookStoreApp.Blazor.Server.UI\Services\Base\ServiceClient.cs
